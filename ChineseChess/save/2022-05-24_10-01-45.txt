@@ -1,0 +1,7 @@
+Player: 1, Action: Soldier (4, 6) -> (4, 5)
+Player: 2, Action: Soldier (6, 3) -> (6, 4)
+Player: 1, Action: Soldier (6, 6) -> (6, 5)
+Player: 2, Action: Cannon (7, 2) -> (7, 9)
+Player: 1, Action: Chariot (8, 9) -> (7, 9)
+Player: 2, Action: Advisor (5, 0) -> (4, 1)
+Player: 1, Action: King (4, 9) -> (4, 8)

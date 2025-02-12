@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/ChineseChess">
+        <file>img/Board.jpg</file>
+        <file>img/B_bing.png</file>
+        <file>img/B_che.png</file>
+        <file>img/B_jiang.png</file>
+        <file>img/B_ma.png</file>
+        <file>img/B_pao.png</file>
+        <file>img/B_shi.png</file>
+        <file>img/B_siang.png</file>
+        <file>img/R_bing.png</file>
+        <file>img/R_che.png</file>
+        <file>img/R_jiang.png</file>
+        <file>img/R_ma.png</file>
+        <file>img/R_pao.png</file>
+        <file>img/R_shi.png</file>
+        <file>img/R_siang.png</file>
+        <file>img/select.png</file>
+        <file>img/Board-4.jpg</file>
+        <file>img/icon.png</file>
+        <file>img/canMove.png</file>
+    </qresource>
+</RCC>

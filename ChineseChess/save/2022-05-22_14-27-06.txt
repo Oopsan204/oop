@@ -1,0 +1,7 @@
+Player: 1, Action: Cannon (4, 3) -> (1, 7)
+Player: 1, Action: Soldier (4, 6) -> (4, 5)
+Player: 2, Action: Soldier (0, 3) -> (0, 4)
+Player: 1, Action: Cannon (1, 7) -> (4, 7)
+Player: 2, Action: Minister (6, 0) -> (4, 2)
+Player: 1, Action: Cannon (4, 7) -> (4, 3)
+Player: 2, Action: Minister (4, 2) -> (6, 4)

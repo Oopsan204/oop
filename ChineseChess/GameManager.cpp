@@ -10,7 +10,7 @@ int GameManager::currentPlayer = 0;
 // Constructor for the GameManager class
 GameManager::GameManager()
 {
-    srand(time(NULL));
+    srand(time(NULL));  // Seed the random number generator
     Board::onBoard = onBoard;
     fstream file;
     file.open("log.txt", ios::out | ios::trunc);

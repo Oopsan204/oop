@@ -1,0 +1,163 @@
+@startuml
+scale 1
+
+class GameManager {
+    - vector<Chess*> onBoard
+    - Board b
+    - Viewer v
+    + GameManager()
+    + void showMenu()
+    + static void restartGame()
+    + static void loadFile(string path)
+    + static void writeLog(string log)
+    + void pushIn(Chess* ch)
+    + static int currentPlayer
+    + static bool checkKing()
+    + static bool isCheck(int flag)
+    + static void aiGame()
+    + static bool stalemate()
+}
+
+class Viewer {
+    - Ui::Viewer* ui
+    - QPushButton* startBtn
+    - QPushButton* quitBtn
+    - QPushButton* restartBtn
+    - QPushButton* loadBtn
+    - QPushButton* surrenderBtn
+    - QPushButton* saveGameBtn
+    - QPushButton* aiBtn
+    - QLabel* title1
+    - QLabel* click_label
+    - QLabel* nowPlayer_label
+    - QLabel* time_label
+    - QLabel* checkKing_label
+    - QLabel* gameMode_label
+    - QTimer* timer
+    - bool start
+    - bool ai
+    - int xPos
+    - int yPos
+    - int counter
+    - const int setTime
+    + Viewer(QWidget* parent = nullptr)
+    + ~Viewer()
+    + void setBoard()
+    + void menu()
+    + void paintEvent(QPaintEvent*)
+    + void mousePressEvent(QMouseEvent*)
+    + void mouseMoveEvent(QMouseEvent*)
+    + void reset()
+    + void afterMove()
+    + void startGame_slot()
+    + void restartGame_slot(int f = 1)
+    + void loadFile_slot()
+    + void surrender_slot()
+    + void saveGame_slot(int f = 1)
+    + void timeout_slot()
+    + void startWithAI_slot()
+}
+
+class Chess {
+    - string name
+    - int index
+    - string pic
+    - int _x
+    - int _y
+    - int fakeX
+    - int fakeY
+    - int firstX
+    - int firstY
+    - bool crossRiver
+    + Chess()
+    + Chess(int x, int y, int col, string src)
+    + virtual void move(int x, int y)
+    + virtual void fakeMove(int x, int y, int col)
+    + virtual void canMove(int show)
+    + int getX()
+    + int getY()
+    + int getFakeX()
+    + int getFakeY()
+    + int getIndex()
+    + void resetChess()
+    + void makeLog(int beforeX, int beforeY)
+    + int color
+    + bool alive
+    + bool fakeAlive
+    + string getPic()
+}
+
+class King {
+    + King()
+    + King(int x, int y, int col, string src)
+    + void canMove(int show)
+}
+
+class Advisor {
+    + Advisor()
+    + Advisor(int x, int y, int col, string src)
+    + void canMove(int show)
+}
+
+class Minister {
+    + Minister()
+    + Minister(int x, int y, int col, string src)
+    + void canMove(int show)
+}
+
+class Horse {
+    + Horse()
+    + Horse(int x, int y, int col, string src)
+    + void canMove(int show)
+}
+
+class Soldier {
+    + Soldier()
+    + Soldier(int x, int y, int col, string src)
+    + void canMove(int show)
+}
+
+class Chariot {
+    + Chariot()
+    + Chariot(int x, int y, int col, string src)
+    + void canMove(int show)
+}
+
+class Cannon {
+    - bool skip
+    + Cannon()
+    + Cannon(int x, int y, int col, string src)
+    + void canMove(int show)
+}
+
+class Board {
+    + static vector<Chess*> onBoard
+    + static int board[9][10]
+    + static int move[9][10]
+    + static int virtualMove[9][10]
+    + static void pushIn(Chess*)
+    + static void printBoard()
+    + static void resetBoard()
+    + static void clearMove()
+    + static void printMove()
+    + static void clearVirtualMove()
+    + static void printVirtualMove()
+    + static Chess* RKing
+    + static Chess* BKing
+}
+
+GameManager --> Viewer
+GameManager --> Board
+GameManager --> Chess
+Viewer --> QPushButton
+Viewer --> QLabel
+Viewer --> QTimer
+Chess <|-- King
+Chess <|-- Advisor
+Chess <|-- Minister
+Chess <|-- Horse
+Chess <|-- Soldier
+Chess <|-- Chariot
+Chess <|-- Cannon
+
+@enduml

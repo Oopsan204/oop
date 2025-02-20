@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\hoctap\\nam3_ky2\\lap_trinh_huong_doi_tuong_c\u002B\u002B\\OOP-Project_Chinese-Chess\\ChineseChess\\",
+  "WorkspaceRootPath": "E:\\hoctap\\nam3_ky2\\lap_trinh_huong_doi_tuong_c\u002B\u002B\\BTL\\ChineseChess\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95F58E4B-65DE-36D1-A225-A3DC76708AE0}|ChineseChess.vcxproj|E:\\hoctap\\nam3_ky2\\lap_trinh_huong_doi_tuong_c\u002B\u002B\\OOP-Project_Chinese-Chess\\ChineseChess\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{95F58E4B-65DE-36D1-A225-A3DC76708AE0}|ChineseChess.vcxproj|E:\\hoctap\\nam3_ky2\\lap_trinh_huong_doi_tuong_c\u002B\u002B\\BTL\\ChineseChess\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{95F58E4B-65DE-36D1-A225-A3DC76708AE0}|ChineseChess.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "main.cpp",
-              "DocumentMoniker": "E:\\hoctap\\nam3_ky2\\lap_trinh_huong_doi_tuong_c\u002B\u002B\\OOP-Project_Chinese-Chess\\ChineseChess\\main.cpp",
+              "DocumentMoniker": "E:\\hoctap\\nam3_ky2\\lap_trinh_huong_doi_tuong_c\u002B\u002B\\BTL\\ChineseChess\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
-              "ToolTip": "E:\\hoctap\\nam3_ky2\\lap_trinh_huong_doi_tuong_c\u002B\u002B\\OOP-Project_Chinese-Chess\\ChineseChess\\main.cpp*",
-              "RelativeToolTip": "main.cpp*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
+              "ToolTip": "E:\\hoctap\\nam3_ky2\\lap_trinh_huong_doi_tuong_c\u002B\u002B\\BTL\\ChineseChess\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-12-25T04:31:15.35Z",
               "EditorCaption": ""

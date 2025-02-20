@@ -1,0 +1,59 @@
+@startuml
+scale 2
+start
+:Initialize GameManager;
+:Initialize Board;
+:Initialize Viewer;
+:Initialize Chess Pieces;
+
+:Show Menu;
+if (User selects "Start new game") then (yes)
+    :Restart Game;
+    :Set Initial Board;
+    :Start Timer;
+else (no)
+    if (User selects "Continue") then (yes)
+        :Load Game from File;
+        :Set Board from File;
+    else (no)
+        if (User selects "Human - Machine") then (yes)
+            :Restart Game;
+            :Set Initial Board;
+            :Start Timer;
+            :Enable AI Mode;
+        else (no)
+            :Exit Application;
+        endif
+    endif
+endif
+
+while (Game is Running) is (true)
+    :Wait for User Input;
+    if (User makes a move) then (yes)
+        :Update Board;
+        :Log Move;
+        :Check for Checkmate;
+        if (Checkmate) then (yes)
+            :Declare Winner;
+            :End Game;
+        else (no)
+            :Switch Player;
+            if (AI Mode and Black's Turn) then (yes)
+                :AI Makes Move;
+                :Update Board;
+                :Log Move;
+                :Check for Checkmate;
+                if (Checkmate) then (yes)
+                    :Declare Winner;
+                    :End Game;
+                else (no)
+                    :Switch Player;
+                endif
+            endif
+        endif
+    endif
+endwhile (false)
+
+stop
+
+@enduml

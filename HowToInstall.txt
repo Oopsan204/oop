@@ -1,0 +1,2 @@
+https://github.com/Oopsan204/oop
+1. Có thể cài đặt phần mềm bằng cách chạy ChinaChess.exe hoặc chạy phần mềm trong folder exe chạy China Chess.exe

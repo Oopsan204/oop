@@ -1,5 +1,7 @@
 # Chinese Chess (Cờ Tướng)
 
+![Chinese Chess](img/chinese_chess.png)
+
 Chinese Chess (Cờ Tướng) là một phần mềm mô phỏng trò chơi cờ tướng, được phát triển bằng ngôn ngữ lập trình C++ và sử dụng thư viện Qt để xây dựng giao diện người dùng. Phần mềm này cho phép người chơi trải nghiệm trò chơi cờ tướng trên máy tính với các tính năng cơ bản như di chuyển quân cờ, kiểm tra nước đi hợp lệ và hiển thị bàn cờ.
 
 ## Tính năng chính
@@ -52,8 +54,9 @@ Dự án bao gồm các tệp và thư mục chính sau:
     ```sh
     ./ChineseChess
     ```
-
+5. Có thể cài đặt phần mềm bằng cách chạy ChinaChess.exe hoặc chạy phần mềm trong folder exe chạy China Chess.exe
 ## Đóng góp
 
 Chúng tôi hoan nghênh mọi đóng góp từ cộng đồng. Nếu bạn muốn đóng góp, vui lòng fork repository, tạo branch mới và gửi pull request.
+
 
